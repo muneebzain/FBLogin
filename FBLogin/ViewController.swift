@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     
-    
+    //MARK: - FacebookLogin
     func facebookLogin() {
         
         loginManager.logIn(permissions: ["email"], from: self) { [self] result, error in
@@ -46,8 +46,6 @@ class ViewController: UIViewController {
                             self.navigationController?.pushViewController(vc, animated: true)
                         }
                     }
-                
-                
                
                 
             }
